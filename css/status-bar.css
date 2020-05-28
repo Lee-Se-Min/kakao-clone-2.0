@@ -1,0 +1,13 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+.status-bar i {
+  font-size: 12px;
+}
+.status-bar .status-bar__clock {
+  margin-left: 5px;
+}
