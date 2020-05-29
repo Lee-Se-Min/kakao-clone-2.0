@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body class="chat-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
@@ -42,7 +42,7 @@
       </div>
     </header>
     <main class="chat">
-      <section class="setting__section">
+      <section class="chat__section">
         <!-- chating coments -->
         <ul class="chat__messages">
           <span class="chat__timestamp">Friday, January 11.2019</span>
@@ -56,7 +56,25 @@
             </div>
             <span class="message__timestamp">15:19</span>
           </li>
+          <li class="send-message message">
+            <span class="message__timestamp">15:22</span>
+            <div class="message__content">
+              <div class="message__bubble">
+                It's my Message bubble
+              </div>
+            </div>
+          </li>
           <li class="incoming-message message">
+            <img src="images/avatar.jpg" class="friend__avatar" />
+            <div class="message__content">
+              <span class="message__autor">정창곤</span>
+              <div class="message__bubble">
+                Congrats good great
+              </div>
+            </div>
+            <span class="message__timestamp">15:19</span>
+          </li>
+          <li class="send-message message">
             <span class="message__timestamp">15:22</span>
             <div class="message__content">
               <div class="message__bubble">
@@ -66,7 +84,7 @@
           </li>
         </ul>
       </section>
-      <section class="setting__section">
+      <section class="chat__section">
         <!-- userplus, typing line, emoticon, mic -->
         <div class="chat__write">
           <div class="chat__write-column">
@@ -83,6 +101,8 @@
             <span class="chat__write-icon">
               <i class="far fa-smile"></i>
             </span>
+          </div>
+          <div class="chat__write-column">
             <span class="chat__write-icon">
               <i class="fas fa-microphone"></i>
             </span>
