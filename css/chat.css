@@ -155,11 +155,20 @@
 }
 
 @keyframes spin {
-  from {
-    transform: none;
+  0% {
+    transform: rotateY(10turn);
   }
-  to {
+  25% {
+    transform: rotateY(5turn);
+  }
+  50% {
+    transform: rotateY(2turn);
+  }
+  75% {
     transform: rotateY(1turn);
+  }
+  100% {
+    transform: none;
   }
 }
 
@@ -169,7 +178,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  animation: spin 1s linear infinite;
+  animation: spin 4s linear;
 }
 .incoming-message .message__autor {
   padding-bottom: 5px;
